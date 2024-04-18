@@ -32,6 +32,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.btnSubtract = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -71,11 +72,23 @@
             this.txtNum2.Size = new System.Drawing.Size(166, 38);
             this.txtNum2.TabIndex = 4;
             // 
+            // btnSubtract
+            // 
+            this.btnSubtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubtract.Location = new System.Drawing.Point(217, 112);
+            this.btnSubtract.Name = "btnSubtract";
+            this.btnSubtract.Size = new System.Drawing.Size(97, 39);
+            this.btnSubtract.TabIndex = 5;
+            this.btnSubtract.Text = "-";
+            this.btnSubtract.UseVisualStyleBackColor = true;
+            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 450);
+            this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.btnAdd);
@@ -93,6 +106,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
+        private System.Windows.Forms.Button btnSubtract;
     }
 }
 
