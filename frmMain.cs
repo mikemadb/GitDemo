@@ -45,5 +45,23 @@ namespace GitDemo
 
 
         }
+
+        private void btnMultiplication_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double num1 = double.Parse(txtNum1.Text);
+                double num2 = double.Parse(txtNum2.Text);
+
+                double mysum = num1 * num2;
+                MessageBox.Show(mysum.ToString(), "Product", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter valid numbers.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
