@@ -32,6 +32,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.btnMultiplication = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -71,11 +72,23 @@
             this.txtNum2.Size = new System.Drawing.Size(166, 38);
             this.txtNum2.TabIndex = 4;
             // 
+            // btnMultiplication
+            // 
+            this.btnMultiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplication.Location = new System.Drawing.Point(217, 110);
+            this.btnMultiplication.Name = "btnMultiplication";
+            this.btnMultiplication.Size = new System.Drawing.Size(97, 39);
+            this.btnMultiplication.TabIndex = 5;
+            this.btnMultiplication.Text = "*";
+            this.btnMultiplication.UseVisualStyleBackColor = true;
+            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 450);
+            this.Controls.Add(this.btnMultiplication);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.btnAdd);
@@ -93,6 +106,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
+        private System.Windows.Forms.Button btnMultiplication;
     }
 }
 
