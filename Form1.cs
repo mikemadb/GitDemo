@@ -19,7 +19,7 @@ namespace GitDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hi!");
+            MessageBox.Show("Hi! Application Version Control System");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
