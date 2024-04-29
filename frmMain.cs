@@ -21,6 +21,7 @@ namespace GitDemo
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Edit by Dr. Mike");
             Application.Exit();
         }
 
