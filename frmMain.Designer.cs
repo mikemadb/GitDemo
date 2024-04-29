@@ -34,6 +34,7 @@
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.btnMultiplication = new System.Windows.Forms.Button();
             this.btnSubtract = new System.Windows.Forms.Button();
+            this.btnDivision = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -95,11 +96,23 @@
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click_1);
             // 
+            // btnDivision
+            // 
+            this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDivision.Location = new System.Drawing.Point(217, 254);
+            this.btnDivision.Name = "btnDivision";
+            this.btnDivision.Size = new System.Drawing.Size(97, 39);
+            this.btnDivision.TabIndex = 7;
+            this.btnDivision.Text = "/";
+            this.btnDivision.UseVisualStyleBackColor = true;
+            this.btnDivision.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 450);
+            this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.btnMultiplication);
             this.Controls.Add(this.txtNum2);
@@ -121,6 +134,7 @@
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.Button btnMultiplication;
         private System.Windows.Forms.Button btnSubtract;
+        private System.Windows.Forms.Button btnDivision;
     }
 }
 
